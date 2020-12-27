@@ -25,7 +25,7 @@
 
 * 尽量能在生产模式下可以直接将打包好的文件自动到cdn,这样的话可以仅仅将html文件放到自己的服务器上就可以了(自己的服务器基本是只提供接口的访问就行,节省带宽)
 
-  
+  ### 以下是脚手架用到的一些插件和工具
 
   | 工具名称          | 作用                     | 参考地址                                                     |
   | ----------------- | ------------------------ | ------------------------------------------------------------ |
@@ -36,8 +36,22 @@
   | chalk             | 让输出带颜色             | https://www.npmjs.com/package/chalk                          |
   | handlebars        | 模板化语言               | https://www.npmjs.com/package/handlebars                     |
   | cFonts            | 特殊文字                 |                                                              |
-  | Metalsmith        | 模板                     |                                                              |
+  | metalsmith        | 模板                     | https://www.npmjs.com/package/metalsmith                     |
   | log-symbols       | 错误标记                 | https://www.npmjs.com/package/log-symbols                    |
+
+  ### 模板使用到的插件和工具
+
+  | 插件名称 | 作用 | 文档地址 |
+  | -------- | ---- | -------- |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
 
   
 
