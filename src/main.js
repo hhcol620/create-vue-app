@@ -1,4 +1,3 @@
-//
 const fs = require('fs')
 const inquirer = require('inquirer')
 const symbols = require('log-symbols')
@@ -7,20 +6,21 @@ const chalk = require('chalk')
 const ora = require('ora')
 const program = require('commander')
 
-const inquirerList = require('./utils/inquirerList.js')
+const { questionList } = require('./utils/inquirerList.js')
 const { rewriteFile } = require('./utils/rewriteFile.js')
 
 program
   .version(require('../package.json').version, '-v, --version')
   .command('init <name>')
+  .description('init project----初始化项目')
   .action((name) => {
     if (!fs.existsSync(name)) {
-      inquirer.prompt(inquirerList.questionList).then((answers) => {
+      inquirer.prompt(questionList).then((answers) => {
         console.log(answers)
         // start to download
         const spinner = ora('downloading template...')
         spinner.start()
-        const downloadPath = `direct:https://github.com/hhcol620/react_antd_scss_mobile.git#master`
+        const downloadPath = `direct:https://github.com/hhcol620/vue-tmplate.git#master`
         download(downloadPath, name, { clone: true }, (err) => {
           if (err) {
             spinner.fail()

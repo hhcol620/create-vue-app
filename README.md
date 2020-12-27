@@ -37,7 +37,7 @@
   | handlebars        | 模板化语言               | https://www.npmjs.com/package/handlebars                     |
   | cFonts            | 特殊文字                 |                                                              |
   | Metalsmith        | 模板                     |                                                              |
-  |                   |                          |                                                              |
+  | log-symbols       | 错误标记                 | https://www.npmjs.com/package/log-symbols                    |
 
   
 

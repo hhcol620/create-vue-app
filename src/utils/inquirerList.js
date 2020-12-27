@@ -1,10 +1,10 @@
 let questionList = [
-  {
-    name: 'templateType',
-    message: 'which template type you need to create?',
-    type: 'list',
-    choices: ['PC', 'H5']
-  },
+  // {
+  //   name: 'templateType',
+  //   message: 'which template type you need to create?',
+  //   type: 'list',
+  //   choices: ['PC', 'H5']
+  // },
   {
     name: 'description',
     message: 'please enter a description:'
@@ -15,6 +15,6 @@ let questionList = [
   }
 ]
 
-let answerList = {}
+let mapActions = {}
 
 module.exports = { questionList }
