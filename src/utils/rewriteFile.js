@@ -3,7 +3,7 @@ const handlebars = require('handlebars')
 
 /**
  * @params : filePath 文件路径 data 传入到文件中的对象
- * @return : 将数据写入到模板文件
+ * @return : 将数据写入到模板文件  重写文件
  * @description :
  * @date : 2020-12-27 15:01
  * @author : hhcol_JS
