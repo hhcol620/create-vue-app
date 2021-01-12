@@ -40,6 +40,7 @@ program
                     };
                     const filePath = `${name}/package.json`;
                     rewriteFile(filePath, meta);
+                    rewriteWebpackConfig(`${name}/build/rules.js`);
                 });
             });
         } else {
