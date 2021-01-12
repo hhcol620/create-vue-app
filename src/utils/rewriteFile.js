@@ -1,5 +1,6 @@
-const fs = require('fs')
-const handlebars = require('handlebars')
+const fs = require('fs');
+const { resolve } = require('path');
+const handlebars = require('handlebars');
 
 /**
  * @params : filePath 文件路径 data 传入到文件中的对象
@@ -10,9 +11,15 @@ const handlebars = require('handlebars')
  */
 
 function rewriteFile(filePath, data) {
-  const fileContent = fs.readFileSync(filePath).toString()
-  const result = handlebars.compile(fileContent)(data)
-  fs.writeFileSync(filePath, result)
+    const fileContent = fs.readFileSync(filePath).toString();
+    const result = handlebars.compile(fileContent)(data);
+    fs.writeFileSync(filePath, result);
 }
 
-module.exports = { rewriteFile }
+function rewriteWebpackConfig(filePath, data) {
+    const exportsContent = require(process.cwd() + '/' + filePath);
+    console.log(exportsContent);
+    console.log('cwd       : ' + process.cwd());
+}
+
+module.exports = { rewriteFile, rewriteWebpackConfig };
