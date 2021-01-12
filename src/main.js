@@ -20,7 +20,7 @@ program
         // start to download
         const spinner = ora('downloading template...')
         spinner.start()
-        const downloadPath = `direct:https://github.com/hhcol620/vue-tmplate.git#master`
+        const downloadPath = `direct:https://github.com/hhcol620/${answers.name}.git#master`
         download(downloadPath, name, { clone: true }, (err) => {
           if (err) {
             spinner.fail()

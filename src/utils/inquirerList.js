@@ -6,11 +6,11 @@ let questionList = [
     choices: ['vue-template-pc', 'vue-template-h5']
   },
   {
-    name: 'Description',
+    name: 'description',
     message: 'please enter a description:'
   },
   {
-    name: 'Author',
+    name: 'author',
     message: 'please enter a author:'
   }
 ]
