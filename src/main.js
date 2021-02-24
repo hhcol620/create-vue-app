@@ -20,7 +20,7 @@ program
                 // start to download
                 const spinner = ora('downloading template...');
                 spinner.start();
-                const downloadPath = `direct:https://github.com/hhcol620/${answers.templateType}.git#template-v1.0.0`;
+                const downloadPath = `direct:https://github.com/hhcol620/${answers.templateType}.git#master`;
                 download(downloadPath, name, { clone: true }, (err) => {
                     if (err) {
                         spinner.fail();
