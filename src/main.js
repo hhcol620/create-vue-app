@@ -7,7 +7,7 @@ const ora = require('ora');
 const program = require('commander');
 
 const { questionList } = require('./utils/inquirerList.js');
-const { rewriteFile, rewriteWebpackConfig } = require('./utils/rewriteFile.js');
+const { rewriteFile, rewriteExtname } = require('./utils/rewriteFile.js');
 
 program
     .version(require('../package.json').version, '-v, --version')
@@ -40,7 +40,7 @@ program
                     };
                     const filePath = `${name}/package.json`;
                     rewriteFile(filePath, meta);
-                    rewriteWebpackConfig(`${name}/build/rules.js`);
+                    rewriteExtname(answers.cssExpand);
                 });
             });
         } else {

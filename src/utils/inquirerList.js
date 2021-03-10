@@ -17,7 +17,7 @@ let questionList = [
         name: 'cssExpand',
         message: 'which kind of CSS expansion do you want?',
         type: 'list',
-        choices: ['less', 'scss', 'default']
+        choices: ['less', 'scss']
     }
 ];
 

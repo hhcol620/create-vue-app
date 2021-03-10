@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { resolve } = require('path');
 const handlebars = require('handlebars');
+const glob = require('glob');
 
 /**
  * @params : filePath 文件路径 data 传入到文件中的对象
@@ -16,10 +17,32 @@ function rewriteFile(filePath, data) {
     fs.writeFileSync(filePath, result);
 }
 
-function rewriteWebpackConfig(filePath, data) {
+function rewritePackage(filePath, data) {
     const exportsContent = require(process.cwd() + '/' + filePath);
     console.log(exportsContent);
     console.log('cwd       : ' + process.cwd());
 }
 
-module.exports = { rewriteFile, rewriteWebpackConfig };
+/**
+ * @params :
+ * @return :
+ * @description : 先获取项目中所有的css less  或者是scss  sass 文件 根据用户选择重写样式文件后缀名
+ * @date : 2021-03-10 19:05
+ * @author : huanghe
+ */
+function rewriteExtname(extname) {
+    glob.sync(process.cwd() + '/' + '**/*.{less,scss,sass,css}').forEach(
+        (filePath) => {
+            console.log(filePath);
+            let newPath = filePath.replace(
+                /(?<=\.)(less|scss|sass|css)$/,
+                extname
+            );
+            fs.rename(filePath, newPath, (err) => {
+                if (err) throw err;
+            });
+        }
+    );
+}
+
+module.exports = { rewriteFile, rewritePackage, rewriteExtname };
