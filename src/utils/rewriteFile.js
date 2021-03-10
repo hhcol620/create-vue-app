@@ -33,7 +33,6 @@ function rewritePackage(filePath, data) {
 function rewriteExtname(extname) {
     glob.sync(process.cwd() + '/' + '**/*.{less,scss,sass,css}').forEach(
         (filePath) => {
-            console.log(filePath);
             let newPath = filePath.replace(
                 /(?<=\.)(less|scss|sass|css)$/,
                 extname
