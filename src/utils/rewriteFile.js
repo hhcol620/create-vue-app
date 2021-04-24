@@ -30,18 +30,15 @@ function rewritePackage(filePath, data) {
  * @date : 2021-03-10 19:05
  * @author : huanghe
  */
-function rewriteExtname(extname) {
-    glob.sync(process.cwd() + '/' + '**/*.{less,scss,sass,css}').forEach(
-        (filePath) => {
-            let newPath = filePath.replace(
-                /(?<=\.)(less|scss|sass|css)$/,
-                extname
-            );
-            fs.rename(filePath, newPath, (err) => {
-                if (err) throw err;
-            });
-        }
-    );
+function rewriteExtname(name, extname) {
+    glob.sync(
+        process.cwd() + '/' + name + '/src/**/*.{less,scss,sass,css}'
+    ).forEach((filePath) => {
+        let newPath = filePath.replace(/(?<=\.)(less|scss|sass|css)$/, extname);
+        fs.rename(filePath, newPath, (err) => {
+            if (err) throw err;
+        });
+    });
 }
 
 module.exports = { rewriteFile, rewritePackage, rewriteExtname };

@@ -20,7 +20,7 @@ program
                 // start to download
                 const spinner = ora('downloading template...');
                 spinner.start();
-                const downloadPath = `direct:https://github.com/hhcol620/${answers.templateType}.git#master`;
+                const downloadPath = `direct:https://github.com/hhcol620/${answers.templateType}.git#dev`;
                 download(downloadPath, name, { clone: true }, (err) => {
                     if (err) {
                         spinner.fail();
@@ -36,11 +36,12 @@ program
                     const meta = {
                         name,
                         description: answers.description,
-                        author: answers.author
+                        author: answers.author,
+                        cssExpand: answers.cssExpand
                     };
                     const filePath = `${name}/package.json`;
-                    rewriteFile(filePath, meta);
-                    rewriteExtname(answers.cssExpand);
+                    rewriteFile(filePath, meta); // 将用户在创建时选项保存到项目中
+                    rewriteExtname(name, answers.cssExpand);
                 });
             });
         } else {
