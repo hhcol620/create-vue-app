@@ -39,12 +39,8 @@
   | metalsmith        | 模板                     | https://www.npmjs.com/package/metalsmith    暂未使用         |
   | log-symbols       | 错误标记                 | https://www.npmjs.com/package/log-symbols                    |
 | glob              | 全局文件搜索             | https://www.npmjs.com/package/glob                           |
-  |                   |                          |                                                              |
-|                   |                          |                                                              |
-  |                   |                          |                                                              |
-  |                   |                          |                                                              |
   
-  
+
   
   ### 模板使用到的插件和工具
   
@@ -52,11 +48,11 @@
   | -------- | ---- | -------- |
   |          |      |          |
   |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
+  |          |      |          |
 |          |      |          |
-  |          |      |          |
-  |          |      |          |
-  |          |      |          |
-  |          |      |          |
   |          |      |          |
   |          |      |          |
   
