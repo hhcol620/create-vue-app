@@ -35,24 +35,31 @@
   | ora               | 进度条                   |                                                              |
   | chalk             | 让输出带颜色             | https://www.npmjs.com/package/chalk                          |
   | handlebars        | 模板化语言               | https://www.npmjs.com/package/handlebars                     |
-  | cFonts            | 特殊文字                 |                                                              |
-  | metalsmith        | 模板                     | https://www.npmjs.com/package/metalsmith                     |
+  | cFonts            | 特殊文字                 | 暂未使用                                                     |
+  | metalsmith        | 模板                     | https://www.npmjs.com/package/metalsmith    暂未使用         |
   | log-symbols       | 错误标记                 | https://www.npmjs.com/package/log-symbols                    |
-
+| glob              | 全局文件搜索             | https://www.npmjs.com/package/glob                           |
+  |                   |                          |                                                              |
+|                   |                          |                                                              |
+  |                   |                          |                                                              |
+  |                   |                          |                                                              |
+  
+  
+  
   ### 模板使用到的插件和工具
-
+  
   | 插件名称 | 作用 | 文档地址 |
   | -------- | ---- | -------- |
   |          |      |          |
   |          |      |          |
+|          |      |          |
   |          |      |          |
   |          |      |          |
   |          |      |          |
   |          |      |          |
   |          |      |          |
   |          |      |          |
-  |          |      |          |
-
+  
   ### 下阶段的工作
  * 将交互命令和模板链接起来,根据用户的选择和输入能做一些用户自定义的配置  
  * 将pc端的ts版本抓紧时间搞出来(顺便搞一下ts)
@@ -60,7 +67,7 @@
  * 有时间的话搞一下h5端
   * h5端 (js 和 ts 两个版本 针对移动端屏幕和常用的交互指定相应的结构和工具函数)
  * 重构一下之前的IRH后台管理项目作为pc端实践
- 
+
 
 
 
