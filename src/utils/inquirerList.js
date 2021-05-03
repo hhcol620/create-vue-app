@@ -21,6 +21,4 @@ let questionList = [
     }
 ];
 
-let mapActions = {};
-
 module.exports = { questionList };

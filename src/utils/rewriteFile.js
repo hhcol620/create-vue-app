@@ -24,7 +24,7 @@ function rewritePackage(filePath, data) {
 }
 
 /**
- * @params :
+ * @params :name 项目名字  extname css拓展的文件名
  * @return :
  * @description : 先获取项目中所有的css less  或者是scss  sass 文件 根据用户选择重写样式文件后缀名
  * @date : 2021-03-10 19:05

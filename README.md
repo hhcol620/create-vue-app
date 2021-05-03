@@ -31,11 +31,11 @@
   | ----------------- | ------------------------ | ------------------------------------------------------------ |
   | commander         | 命令编写                 | https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md |
   | download-git-repo | 下载git模板              | https://www.npmjs.com/package/download-git-repo              |
-  | inquirer          | 命令行交互，获取用户输入 |                                                              |
-  | ora               | 进度条                   |                                                              |
+  | inquirer          | 命令行交互，获取用户输入 | https://www.npmjs.com/package/inquirer                       |
+  | ora               | 进度条                   | https://www.npmjs.com/package/ora                            |
   | chalk             | 让输出带颜色             | https://www.npmjs.com/package/chalk                          |
   | handlebars        | 模板化语言               | https://www.npmjs.com/package/handlebars                     |
-  | cFonts            | 特殊文字                 | 暂未使用                                                     |
+  | cFonts            | 特殊文字                 | https://www.npmjs.com/package/cfonts   暂未使用              |
   | metalsmith        | 模板                     | https://www.npmjs.com/package/metalsmith    暂未使用         |
   | log-symbols       | 错误标记                 | https://www.npmjs.com/package/log-symbols                    |
   | glob              | 全局文件搜索             | https://www.npmjs.com/package/glob                           |
