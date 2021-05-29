@@ -24,7 +24,7 @@ program
                 download(downloadPath, name, { clone: true }, (err) => {
                     if (err) {
                         spinner.fail();
-                        console.error(
+                        console.log(
                             symbols.error,
                             chalk.red(
                                 `${err}download template fail,please check your network connection and try again`
@@ -42,11 +42,17 @@ program
                     const filePath = `${name}/package.json`;
                     rewriteFile(filePath, meta); // 将用户在创建时选项保存到项目中
                     rewriteExtname(name, answers.cssExpand);
+                    console.log(
+                        symbols.success,
+                        chalk.green(
+                            `Success! please "cd ${name}" and "npm install"`
+                        )
+                    );
                 });
             });
         } else {
             // 错误提示项目已存在，避免覆盖原有项目
-            console.error(symbols.error, chalk.red('project had exist'));
+            console.log(symbols.error, chalk.red('project had exist'));
         }
     });
 
