@@ -1,6 +1,6 @@
 {
     "name": "cva-hh",
-    "version": "1.0.4-beta",
+    "version": "1.0.5",
     "description": "* dev-server",
     "main": "index.js",
     "scripts": {
