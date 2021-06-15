@@ -1,6 +1,6 @@
 {
     "name": "cva-cli",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "* dev-server",
     "main": "index.js",
     "scripts": {
